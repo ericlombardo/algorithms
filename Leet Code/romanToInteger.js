@@ -28,9 +28,9 @@
   return sum // return the total value
 };
 
-romanToInt('III') //=> 3
-romanToInt('IV') // => 4
-romanToInt('XXXVII') // => 37
-romanToInt('XL') // => 40
-romanToInt('XCVIII') // => 98
-romanToInt('MCCXLIX') // => 1,249
+// romanToInt('III') //=> 3
+// romanToInt('IV') // => 4
+// romanToInt('XXXVII') // => 37
+// romanToInt('XL') // => 40
+// romanToInt('XCVIII') // => 98
+// romanToInt('MCCXLIX') // => 1,249
