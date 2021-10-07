@@ -13,6 +13,21 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
  * @param {number} target
  * @return {number[]}
  */
- var twoSum = function(nums, target) {
-    
+var twoSum = function(nums, target) {
+  // let lookingFor = []
+  // if (lookingFor.includes(target - nums[i])) {
+
+  // }
+  for (let i = 0; i < nums.length; i++) {
+    for (let z = 0; z < (nums.length - 1); z++) {
+      if (nums[i] + nums[z + 1] === target) {
+        return [i, (z+1)]
+      }
+    }
+  }
 };
+
+nums = [2,7,11,15]
+target = 26
+
+console.log(twoSum(nums, target))
