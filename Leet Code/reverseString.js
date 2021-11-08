@@ -2,12 +2,25 @@
  * @param {character[]} s
  * @return {void} Do not return anything, modify s in-place instead.
  */
- var reverseString = function(s) {
-  return function() {
-      // Don't create new array
-      // Need to swap first and last
-      // Move in one
-      // Swap them
-      // Move in one until the middle
+
+/**
+ * s = 'eric'
+ * s = 'cire'
+ *  */ 
+
+var reverseString = function(s) {
+
+  if (!s || s.length < 2 || typeof s !== 'string') {
+    return 'No string to reverse, try again'
   }
+
+  let newArray = []
+
+  for (let i = s.length - 1; i >= 0; i--) {
+    newArray.push(s[i])
+  }
+  return newArray.join('')
+
+ 
 };
+reverseString('eric')
