@@ -4,18 +4,24 @@
  */
 
 var reverseString = function(s) {
-  if (s.length === 0) { // set the check to avoid infinite loop
-    return ""
+  let left = 0
+  let right = s.length - 1
+
+  const recur = (str, left, right) => {
+    let temp
+    if (left < right) {
+      temp = str[right]
+      str[right] = str[left]
+      str[left] = temp
+      return recur(str, left + 1, right - 1)
+    }
+    return str
   }
-
-  // take first character and then run reverseString again removing first character
-  // continue this until you 
-   return reverseString(s.slice(1)) + s[0]
-
+  return recur(s, left, right)
 };
 console.log(reverseString(['h', 'e', 'l', 'l', 'o']))
 
-// found suraj Sharma youtube video to help explain the concepts of recursion
+// Tom's YouTube video showed me where I was going wrong with my temp assignment
 // https://www.youtube.com/watch?v=AgMq_wzwAXM
 
 
