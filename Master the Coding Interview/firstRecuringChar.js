@@ -13,7 +13,7 @@ const firstRecuringChar = (nums) => {
     if (previousNums[nums[i]]) {
       return nums[i]
     } else {
-      previousNums[nums[i]] = nums[i]
+      previousNums[nums[i]] = true
     }
   }
   return undefined
