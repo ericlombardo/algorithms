@@ -1,13 +1,13 @@
 var reverseWords = function(s) {
-  let splitWords = s.split(' ')
-  let reversedWords = ''
+  let words = s.split(" ")
   
-  for (let word of splitWords) {
-      reversedWords += word.split('').reverse().join("") + " "
+  for (let i = 0; i < words.length; i++) { // need to find a more efficient way to handle reversing
+    const reverseString = (word) => { // function for recursion
+          return (word === '') ? '' : reverseString(word.substr(1)) + word.charAt(0);
+      }
+      words[i] = reverseString(words[i])
   }
-  
-  return reversedWords.substring(0, reversedWords.length - 1)
+  return words.join(' ')
 };
 
 
-// Used yinchuhui88's discussion response as example
