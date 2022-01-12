@@ -12,12 +12,19 @@
  */
  var removeNthFromEnd = function(head, n) {
     
+    
   let counter = head
   let count = 1
   
   while (counter.next) {
      counter = counter.next
      count++
+  }
+  
+  if (count === n) {
+      return head = head.next
+  } else if (count === 1) {
+      return head.val = head.next
   }
   
   let stopAt = count - (n + 1) // subtract
@@ -30,3 +37,4 @@
 
   return head
 };
+
