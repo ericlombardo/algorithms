@@ -1,0 +1,23 @@
+{
+  "name": "algos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericlombardo/algorithms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericlombardo/algorithms/issues"
+  },
+  "homepage": "https://github.com/ericlombardo/algorithms#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
