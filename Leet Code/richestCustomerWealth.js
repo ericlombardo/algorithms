@@ -27,4 +27,14 @@ input = [[1,2,3], [2,3,4], [3,4,5]]
 output = 12
 
 
+Ruby Solution:
+  def maximum_wealth(accounts)
+    
+    highestCustomer = accounts.max do | a1, a2 |
+         a1.sum() <=> a2.sum()
+    end
+    
+    highestCustomer.sum()
+  end
+
 */
