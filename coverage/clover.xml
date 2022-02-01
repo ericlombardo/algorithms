@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643678201915" clover="3.2.0">
-  <project timestamp="1643678201915" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4" elements="30" coveredelements="30" complexity="0" loc="18" ncloc="18" packages="1" files="2" classes="2"/>
+<coverage generated="1643753924390" clover="3.2.0">
+  <project timestamp="1643753924391" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5" elements="37" coveredelements="37" complexity="0" loc="24" ncloc="24" packages="1" files="3" classes="3"/>
     <file name="countElementsWithStrictSmallerAndGreater.js" path="/Users/Eric/Desktop/Desktop/projects/Algos/Leet Code/countElementsWithStrictSmallerAndGreater.js">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="3" count="23" type="stmt"/>
@@ -25,6 +25,15 @@
       <line num="14" count="5" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
       <line num="23" count="1" type="stmt"/>
+    </file>
+    <file name="shuffleString.js" path="/Users/Eric/Desktop/Desktop/projects/Algos/Leet Code/shuffleString.js">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="11" type="stmt"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
