@@ -1,4 +1,4 @@
-/**
+/*
  * @param {string[]} emails
  * @return {number}
  */
